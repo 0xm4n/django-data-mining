@@ -18,5 +18,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('kmeans/', include('kmeans.urls')),
+    path('dijkstra/', include('dijkstra.urls')),
     path('admin/', admin.site.urls),
 ]
