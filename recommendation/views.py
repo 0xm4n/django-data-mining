@@ -6,9 +6,10 @@ from django.core import serializers
 import numpy as np
 import dijkstar
 
-def index(request):
+def dijkstra(request):
     src = request.GET.get('src', '123')
     dest = request.GET.get('dest', '234')
+    # Load the Graph
     graph = dijkstar.Graph.load("/Users/Ryan/Desktop/tensorly/graph.txt")
     cost_func = lambda u, v, e, prev_e: e['cost']
     try:

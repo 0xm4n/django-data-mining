@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('kmeans/', include('kmeans.urls')),
-    path('dijkstra/', include('dijkstra.urls')),
+    path('cluster/', include('cluster.urls')),
+    path('recommendation/', include('recommendation.urls')),
+    path('neural_network/', include('neural_network.urls')),
     path('admin/', admin.site.urls),
 ]

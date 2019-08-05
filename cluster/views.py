@@ -6,12 +6,12 @@ from django.http import JsonResponse
 from django.core import serializers
 from . import models
 
-def index(request):
+def kmeans(request):
     cluster = request.GET.get('cluster', '10')
     print(cluster)
-    data = models.Wells.objects.all()
-    json_res = serializers.serialize('python', data)
+    # data = models.Wells.objects.all()
+    # json_res = serializers.serialize('python', data)
     response = {
-        'data': json_res
+        'data': 'json_res'
     }
     return JsonResponse(response)
