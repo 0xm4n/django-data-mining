@@ -8,7 +8,7 @@ This project uses Django to provide RESTful Web Services for data mining in your
 django-data-mining is a powerful and flexible server which provides a simple yet highly extensible architecture. 
 
 It is hard to add up some python based data mining functions to an exsiting back-end server(Node.js). Although Node.js provides a  "child_process" module to run a python script and uses "stdout" to listen for the output, it has a poor scalability and difficult to debug. This project sets up a python server to run the data mining functions and return the output to the back-end in a JSON form.
-#### Achitecture
+#### Architecture
 ![](https://upload-images.jianshu.io/upload_images/17071502-e584f6ab7d7e1471.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "Software achitecture")
 ## Features
 + Cluster
