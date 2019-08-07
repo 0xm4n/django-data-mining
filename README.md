@@ -27,7 +27,7 @@ First, create a new app:
 ```
 $ python manage.py startapp APP_NAME
 ```
-Second, append this app to _INSTALLED_APPS_ list in **mlserver/settings.py**
+Second, append this app to _INSTALLED_APPS_ list in **server/settings.py**
 ```python
 INSTALLED_APPS = [
     # Append the APP_NAME at the end of this array
@@ -45,7 +45,7 @@ urlpatterns = [
 ```
 
 ```python
-# File path: mlserver/urls.py
+# File path: server/urls.py
 from django.contrib import admin
 from django.urls import path,include
 urlpatterns = [
